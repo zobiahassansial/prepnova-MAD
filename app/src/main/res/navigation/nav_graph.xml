@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.prepnova.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.prepnova.FirstFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ResumeBuilderFragment"
+            app:destination="@id/ResumeBuilderFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_DocumentScannerFragment"
+            app:destination="@id/DocumentScannerFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_InterviewPrepFragment"
+            app:destination="@id/InterviewPrepFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_NoteSummarizerFragment"
+            app:destination="@id/NoteSummarizerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.prepnova.SecondFragment"
+        android:label="Study Planner"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.prepnova.ThirdFragment"
+        android:label="Flashcards"
+        tools:layout="@layout/fragment_third" />
+
+    <fragment
+        android:id="@+id/ResumeBuilderFragment"
+        android:name="com.example.prepnova.ResumeBuilderFragment"
+        android:label="Resume Builder"
+        tools:layout="@layout/fragment_resume_builder" />
+
+    <fragment
+        android:id="@+id/DocumentScannerFragment"
+        android:name="com.example.prepnova.DocumentScannerFragment"
+        android:label="Document Scanner"
+        tools:layout="@layout/fragment_document_scanner" />
+
+    <fragment
+        android:id="@+id/InterviewPrepFragment"
+        android:name="com.example.prepnova.InterviewPrepFragment"
+        android:label="Interview Simulator"
+        tools:layout="@layout/fragment_interview_prep" />
+
+    <fragment
+        android:id="@+id/NoteSummarizerFragment"
+        android:name="com.example.prepnova.NoteSummarizerFragment"
+        android:label="Note Summarizer"
+        tools:layout="@layout/fragment_note_summarizer" />
+
+</navigation>
